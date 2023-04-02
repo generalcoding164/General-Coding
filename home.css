@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(212, 212, 212);
+    padding: 0;
+    margin: 0;
+}
+
+
+/* AppBar part */
+
+.hidden{
+    transform: translateY(-100px);
+    transition: 0.5s ease-out;
+}
+
+.appBar{
+    background-color: rgb(31, 31, 31);
+    /* text-align: center; */
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0 0;
+    /* border-radius: 10px; */
+    position: sticky;
+    top: 0;
+    
+    overflow:auto;
+    transition: .4s ease;
+}
+
+.appBar .appBarItems{
+    display: inline-block;
+    
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    /* background-color: blueviolet; */
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.appBar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.appBar .appBarItem{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.appBar .appBarItem label{
+    cursor: pointer;
+}
+
+.appBar .selectedTab{
+    background-color: rgba(128, 128, 128, 0.282);
+    padding: 2.5px 10px;
+    border-radius: 10px;
+    margin: 0;
+    transition: ease;
+    transition-duration: .25s;
+}
+
+.appBar button{
+    float: right;
+    background-color: transparent;
+    padding: 2.5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.appBar button img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.appBar button span{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+#homeBG{
+    /* margin-top: -20px; */
+    height: 90vh;
+    margin-bottom: 50px;
+
+    background-image: url(images/bg\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+    overflow: auto;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#homeBG #rightCont{
+    height: 600px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.44);
+    border-radius: 10px;
+    
+    float:right;
+    box-shadow: 0px 0px 30px coral;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 25px;
+
+    color: whitesmoke;
+}
+
+#homeBG #socials{
+    scale: 1.5;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: white;
+}
+
+.socialLogo{
+    margin: 0 5px;
+}
+
+#socials a{
+    color: white;
+    text-decoration: none;
+}
+
+#homeBG .socialLogo:hover{
+    scale: 1.1;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+#homeBG #headingBox{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.contactSection{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+
+    margin-top: 50px;
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
