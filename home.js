@@ -1,3 +1,11 @@
+// bio
+
+var bioCont = document.querySelector("#bio");
+
+setTimeout(() => {
+    bioCont.innerHTML = "And, I can make apps for you when I am ready ! 😄";
+}, 5000);
+
 // selecting appBar
 var appBarTabLists = document.querySelectorAll(".appBarItem");
 appBarTabLists.forEach((tab) => {
